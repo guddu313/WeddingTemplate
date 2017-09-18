@@ -1,115 +1,59 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/skel';
 
 /*
-	Big Picture by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Form */
+/* Type */
 
-	form {
-		input[type="text"],
-		input[type="email"],
-		input[type="password"],
-		select,
-		textarea {
-			position: relative;
-			-ms-behavior: url('assets/js/ie/PIE.htc');
-			border: solid 1px;
-		}
+	body, input, select, textarea {
+		color: _palette(fg-bold);
 	}
 
 /* Button */
 
-	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
-	.button,
-	button {
+	input[type="button"],
+	button,
+	.button {
 		position: relative;
-		-ms-behavior: url('assets/js/ie/PIE.htc');
-
-		&.down {
-			text-indent: 0;
-		}
-	}
-
-/* Footer */
-
-	#footer {
-		color: #fff;
-	}
-
-/* Intro */
-
-	#intro {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background: url('../../images/intro.jpg');
-		background-size: cover;
-
-		.content {
-			position: relative;
-			z-index: 1;
-		}
 
 		&:after {
-			content: '';
-			background: url('images/overlay.png');
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
+			display: none;
 		}
 	}
 
-/* One */
+/* Features */
 
-	#one {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background: url('../../images/one.jpg');
-		background-size: cover;
-
-		.content {
-			position: relative;
-			z-index: 1;
-		}
-
-		&.left:before,
-		&.right:after {
-			content: '';
-			background: url('images/overlay.png');
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
+	.features {
+		border: solid 1px;
 	}
 
-/* Two */
+/* Form */
 
-	#two {
-		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-		background: url('../../images/two.jpg');
-		background-size: cover;
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea {
+		background: transparent;
+		border: solid 1px;
+	}
 
-		.content {
-			position: relative;
-			z-index: 1;
-		}
+/* Split */
 
-		&.left:before,
-		&.right:after {
-			content: '';
-			background: url('images/overlay.png');
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
+	.split {
+		&.style1 {
+			> :first-child {
+				padding-right: 2em;
+				width: 70%;
+			}
 		}
 	}
