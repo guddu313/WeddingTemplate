@@ -1,0 +1,9 @@
+# Site settings
+title: Kristen and Sean's wedding!
+description: > # this means to ignore newlines until "baseurl:"
+  All the information you could ever want to know about the big wedding.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://kristenandsean.aretotallygettingmarried.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
