@@ -3013,6 +3013,8 @@
 		-ms-flex-direction: row;
 		flex-direction: row;
 		min-height: 22.5em;
+        padding: 0;
+        overflow: hidden;
 	}
 
 		body.is-ie .spotlights > section {
@@ -3020,12 +3022,22 @@
 		}
 
 		.spotlights > section > .image {
+            opacity: 0.7;
 			background-position: center center;
 			background-size: cover;
 			border-radius: 0;
 			display: block;
 			position: relative;
 			width: 25em;
+            
+            background-color: #000;
+            transform: scale(1.15);
+            transition: transform 0.5s, opacity 0.5s;
+		}
+		.spotlights > section > .image:hover {
+            opacity: 1;
+            transform: scale(1.03);
+			
 		}
 
 			.spotlights > section > .image img {
@@ -3290,6 +3302,7 @@
 			-ms-justify-content: center;
 			justify-content: center;
 			min-height: 100vh;
+            font-weight: 300;
 		}
 
 			body.is-ie .wrapper.fullscreen {
