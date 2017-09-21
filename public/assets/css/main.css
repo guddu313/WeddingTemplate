@@ -3022,14 +3022,16 @@
 		}
 
 		.spotlights > section > .image {
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-bottom: 30px;
             opacity: 0.7;
 			background-position: center center;
 			background-size: cover;
-			border-radius: 0;
+			border-radius: 50%;
 			display: block;
 			position: relative;
-			width: 25em;
-            
+			width: 50%;
             background-color: #000;
             transform: scale(1.15);
             transition: transform 0.5s, opacity 0.5s;
@@ -3042,7 +3044,6 @@
 
 			.spotlights > section > .image img {
 				border-radius: 0;
-				display: block;
 			}
 
 			.spotlights > section > .image:before {
