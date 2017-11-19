@@ -208,3 +208,17 @@
 	});
 
 })(jQuery);
+
+/*Maps*/
+var map = new GMaps({
+  div: '.map',
+  lat: 22.982664,
+  lng: 72.629507,
+  zoom: 12
+});
+
+map.addMarker({
+  lat: 22.982664,
+  lng: 72.629507,
+  title: 'Gareta Reception'
+});
