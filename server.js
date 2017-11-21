@@ -7,6 +7,13 @@ var moment = require('moment');
 
 app.use(express.static(__dirname + '/public'));
 
+app.post('/public', function(req, res) {
+    var name = req.body.name;
+    var email = req.body.email;
+	var message = req.body.message;
+    //console.log("post received: %s %s", username, password);
+});
+
 http.listen(PORT, function(){
 	console.log('Server started!!!');
 });

@@ -185,7 +185,7 @@
 											<textarea name="message" id="message" rows="5"></textarea>
 										</div>
 										<ul class="actions">
-											<input type="submit" value="Send Form">
+											 <button type="submit" name="submit" class="btn btn-primary" id="send-email">Send Message</button>
 										</ul>
 									</form>
 								</section>
